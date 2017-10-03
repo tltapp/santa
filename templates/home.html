@@ -1,0 +1,44 @@
+<div class="home-page">
+	<div class="container" ng-show="afterChristmas">
+		<div class="countdown-container">
+			<h4 class="clock-small">IT'S NOT YET CHRISTMAS</h4>
+			<!-- <img class="clock" src="img/clock.png" /> -->
+			<div class="clock-container">
+				<p class="clock-large" ng-bind="days">126</p>
+				<p class="clock-small">DAYS</p>
+			</div>
+			<div class="clock-container sep">
+				<p class="clock-large-sep">:</p>
+			</div>
+			<div class="clock-container">
+				<p class="clock-large" ng-bind="hours">14</p>
+				<p class="clock-small">HOURS</p>
+			</div>
+			<div class="clock-container sep">
+				<p class="clock-large-sep">:</p>
+			</div>
+			<div class="clock-container">
+				<p class="clock-large mins_span" ng-bind="minutes">15</p>
+				<p class="clock-small">MINS</p>
+			</div>
+			<div class="clock-container sep">
+				<p class="clock-large-sep">:</p>
+			</div>
+			<div class="clock-container">
+				<p class="clock-large secs_span" ng-bind="seconds">00</p>
+				<p class="clock-small">SECS</p>
+			</div>
+		</div>
+		<div class="btn-googleplay">
+			<a href="https://play.google.com/store/apps/details?id=com.thelittletechie.secretsanta"><img src="img/googleplay.png" alt="Google Play" /></a>		
+		</div>
+	</div>
+
+	<div class="christmas-message" ng-hide="afterChristmas">
+		<h2>MERRY CHRISTMAS</h2>
+		<h4>SEE YOU NEXT YEAR</h4>
+		<div class="btn-googleplay">
+			<a href="https://play.google.com/store/apps/details?id=com.thelittletechie.secretsanta"><img src="img/googleplay.png" alt="Google Play" /></a>		
+		</div>
+	</div>
+</div>
